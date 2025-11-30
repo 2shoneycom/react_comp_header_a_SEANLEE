@@ -1,0 +1,36 @@
+:root {
+  --primaryColor: #007cb6;
+  --secondaryColor: #e3661b;
+  --errorColor: #f44336;
+  --primaryTextColor: #232f3e;
+  --secondaryTextColor: #6c7778;
+  --headerBgColor: #ffffff;
+  --headerBorderColor: #EAEDED;
+  --headerMenuBgColor: #ffffff;
+  --headerMenuSubNavTextColor: #232f3e;
+  --aboveBgColor: #fafafa;
+  --belowBgColor: #fafafa;
+  --footerBgColor: #232f3e;
+  --footerTextColor: #ffffff;
+  --buttonBgColor: transparent;
+  --buttonTextColor: #007cb6;
+  --primaryHeadlineFont: Amazon Ember;
+  --secondaryHeadlineFont: Amazon Ember;
+  --tertiaryHeadlineFont: Ember Modern Display;
+  --bodyFont: Amazon Ember;
+  --contentWidth: 1240px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
