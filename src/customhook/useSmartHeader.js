@@ -9,6 +9,11 @@ function useSmartHeader() {
 
   useEffect(() => {
     const headerHeight = headerRef.current ? headerRef.current.offsetHeight : 70;
+    
+    // header-height variable value setting
+    if (headerRef.current) {
+      headerRef.current.style.setProperty('--header-height', `${headerHeight}px`);
+    }
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;

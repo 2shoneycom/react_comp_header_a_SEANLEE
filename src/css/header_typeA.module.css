@@ -1,3 +1,10 @@
+.combinator_header_hamburger {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
 .outer_box {
   width: 100%;
   background: var(--headerBgColor);
@@ -11,7 +18,7 @@
 }
 
 .header-hidden {
-  top: -6em;
+  top: calc(var(--header-height) * -1);
 }
 
 .outer_box .inner_box {
@@ -65,6 +72,18 @@
 
 .header_navigator_item:hover {
   color: var(--primaryColor);
+}
+
+.hamburger_outer_box {
+  width: 150px;
+  height: 500px;
+  background-color: cyan;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+
+  transition: top 0.3s ease-in-out;
 }
 
 /* Responsive Web Design (width >= 1025px) */

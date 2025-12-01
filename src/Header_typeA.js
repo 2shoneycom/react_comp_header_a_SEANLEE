@@ -34,6 +34,9 @@ function Header_typeA() {
     headerClass = `${headerClass} ${styles[`header-hidden`]}`;
   }
 
+  // 해야할 것
+  // -> 햄버거 메뉴
+
   return (
     <div ref={headerRef} className={headerClass}>
       <div className={styles.inner_box}>
@@ -52,14 +55,14 @@ function Header_typeA() {
             >
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor" />
             </svg>
-            <svg 
-              className={styles.close_menu_icon} 
-              viewBox="0 0 24 24" 
-              width="24" 
+            <svg
+              className={styles.close_menu_icon}
+              viewBox="0 0 24 24"
+              width="24"
               height="24"
               aria-hidden="true"
             >
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor"/>
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="currentColor" />
             </svg>
           </button>
 
@@ -84,6 +87,13 @@ function Header_typeA() {
             )}
           </div>
         </div>
+      </div>
+      {/* Hamburger Menu */}
+      {/* 쉽지 않은게 나는 헤더에 딱붙어서 스르륵 올라가기를 원하는데 그러려면
+      (트랜지션이 적용되려면) top: 속성을 지정해놔야 함 근데 헤더 높이가 딱 정해져 있는게 아니라 그걸 갖고와서 참조해서 사용해야하는데
+      js에서 가져온 변수를 css에 적용할 수도 없는 노릇임*/}
+      <div className={styles.hamburger_outer_box}>
+        ddddd
       </div>
     </div>
   );
