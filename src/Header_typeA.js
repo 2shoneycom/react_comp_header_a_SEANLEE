@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./css/header_typeA.module.css";
 import useSmartHeader from "./customhook/useSmartHeader";
+import Hamburger from "./components/Hamburger";
 
 function Header_typeA() {
   /* [Basic Data] */
@@ -89,12 +90,9 @@ function Header_typeA() {
         </div>
       </div>
       {/* Hamburger Menu */}
-      {/* 쉽지 않은게 나는 헤더에 딱붙어서 스르륵 올라가기를 원하는데 그러려면
-      (트랜지션이 적용되려면) top: 속성을 지정해놔야 함 근데 헤더 높이가 딱 정해져 있는게 아니라 그걸 갖고와서 참조해서 사용해야하는데
-      js에서 가져온 변수를 css에 적용할 수도 없는 노릇임*/}
-      <div className={styles.hamburger_outer_box}>
-        ddddd
-      </div>
+      <Hamburger 
+        navData={recievedNavData}
+      />
     </div>
   );
 }

@@ -1,0 +1,36 @@
+.hamburger_outer_box {
+  height: 100vh;
+  background: var(--headerMenuBgColor);
+  border-top: 1px solid var(--headerBorderColor);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 90;
+}
+
+.hamburger_outer_box .hamburger_navigatior {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger_navigatior .hamburger_navigatior_item {
+  margin: 0 1em;
+  max-width: 320px;
+  border-bottom: 1px solid var(--headerBorderColor);
+}
+
+.hamburger_navigatior_item:hover {
+  color: var(--primaryColor);
+}
+
+.hamburger_navigatior_item .hamburger_navigator_text {
+  margin: 1.2em 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Web Design (width >= 1025px) */
+@media screen and (min-width: 1025px) {
+  .hamburger_outer_box {
+    display: none;
+  }
+}

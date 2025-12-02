@@ -67,23 +67,10 @@
 .header_navigator .header_navigator_item {
   font-weight: 200;
   letter-spacing: -0.05em;
-  color: var(--primaryTextColor);
 }
 
 .header_navigator_item:hover {
   color: var(--primaryColor);
-}
-
-.hamburger_outer_box {
-  width: 150px;
-  height: 500px;
-  background-color: cyan;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 100;
-
-  transition: top 0.3s ease-in-out;
 }
 
 /* Responsive Web Design (width >= 1025px) */
@@ -97,6 +84,10 @@
     display: flex;
     justify-content: flex-end;
     gap: 2em;
+  }
+
+  .hamburger_outer_box {
+    display: none;
   }
 }
 
