@@ -6,6 +6,8 @@
   top: 100%;
   left: 0;
   z-index: 90;
+  width: 100%;       
+  max-width: 320px;
 
   transition: left 0.1s ease-in-out;
 }
@@ -17,12 +19,11 @@
 .hamburger_outer_box .hamburger_navigatior {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.hamburger_navigatior .hamburger_navigatior_item {
-  width: 320px;
-  max-width: calc(100% - 2em); 
-  margin: 0 1em;
+.hamburger_navigatior_item {
+  margin: 0 1em;      
   border-bottom: 1px solid var(--headerBorderColor);
 }
 
