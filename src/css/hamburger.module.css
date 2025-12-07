@@ -6,6 +6,12 @@
   top: 100%;
   left: 0;
   z-index: 90;
+
+  transition: left 0.1s ease-in-out;
+}
+
+.hamburger_hidden {
+  left: calc(var(--hamburger-width) * -1);
 }
 
 .hamburger_outer_box .hamburger_navigatior {
@@ -14,8 +20,9 @@
 }
 
 .hamburger_navigatior .hamburger_navigatior_item {
+  width: 320px;
+  max-width: calc(100% - 2em); 
   margin: 0 1em;
-  max-width: 320px;
   border-bottom: 1px solid var(--headerBorderColor);
 }
 

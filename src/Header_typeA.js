@@ -92,6 +92,7 @@ function Header_typeA() {
       {/* Hamburger Menu */}
       <Hamburger 
         navData={recievedNavData}
+        isMenuOpen={isMenuOpen}
       />
     </div>
   );
