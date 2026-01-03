@@ -33,7 +33,8 @@
 
 .hamburger_navigatior_item .hamburger_navigator_text {
   margin: 1.2em 0;
-  font-size: 0.9rem;
+  font-size: var(--label-3);
+  font-weight: 400;
 }
 
 /* Responsive Web Design (width >= 1025px) */

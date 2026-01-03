@@ -20,23 +20,17 @@ function Header_typeA() {
   };
 
   const [navItemList, setNavItemList] = useState(recievedNavData.itemList);
-
   /* [Hamburger Menu] */
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
   /* [Smart Header System] */
   const { isHidden, headerRef } = useSmartHeader();
   let headerClass = styles.outer_box;
   if (isHidden) {
     headerClass = `${headerClass} ${styles[`header-hidden`]}`;
   }
-
-  // 해야할 것
-  // -> 햄버거 메뉴
 
   return (
     <div ref={headerRef} className={headerClass}>
